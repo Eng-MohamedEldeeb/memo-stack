@@ -1,0 +1,5 @@
+{
+  "watch": ["."],
+  "ext": "ts",
+  "exec": "npx tsc && node --watch --env-file=.env dist/main.js"
+}
