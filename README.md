@@ -21,9 +21,23 @@
 
 ## Overview / Description
 
+
 MemoStack is a modern, secure, and modular note-taking API inspired by tools like Google Keep Notes. It's designed to provide users with a structured way to create, organize, and manage personal notes, tasks, and labels — with advanced features like OTP-based authentication, data caching with Redis, and cloud file attachment.
 
 Built with **Node.js**, **TypeScript**, and **MongoDB**, MemoStack is more than a CRUD app — it's a scalable system that balances performance with clean design and privacy-focused architecture.
+
+## Discussions: 
+- [Features](#features--what-makes-memostack-smart)
+- [Behind the Scenes of MemoStack](#system-design-logic--behind-the-scenes-of-memostack)
+- [Custom Guards](#custom-guards--securing-memostack-with-intelligence--foresight)
+- [Building Custom Guards Based On NestJS Guards](#implementation-details--building-custom-guards)
+   - [applyguardsactivator](#applyguardsactivator--a-custom-decorator-for-guard-activation)
+   - [GuardActivator](#guardactivator--the-abstract-blueprint)
+   - [Example – IsAuthenticatedGuard](#example--isauthenticatedguard)
+   - [Real Use Case – Chaining Multiple Guards for Route Protection](#real-use-case--chaining-multiple-guards-for-route-protection)
+- [Installation & Running Locally](#installation--running-locally)
+- [API Endpoints](#api-endpoints)
+
 
 ## Features – What Makes MemoStack Smart?
 
@@ -520,7 +534,8 @@ npm run dev
 
 # API Endpoints
 
-> [!NOTE] > **[Postman Link.](https://documenter.getpostman.com/view/37407571/2sB2xBEAMV)**
+> [!NOTE]
+> **[Postman Link.](https://documenter.getpostman.com/view/37407571/2sB2xBEAMV)**
 
 ## Auth Endpoints: `/auth`
 
